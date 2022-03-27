@@ -18,9 +18,5 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            emailext body: 'summary', subject: 'pipeline status', to: 'modisakshi54@gmail.com'
-        }
-    }
+    
 }
